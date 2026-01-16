@@ -47,7 +47,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 } */
     </style>
-  
+
 </head>
 
 <body style="background-color: #5b5b5b !impontent">
@@ -63,7 +63,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-search-plus me-3"></i>{{ $user->name }}</h2>
+            <h2 class="m-0 text-primary"><i class="fa fa-search-plus me-3"></i>{{ $user->name ?? 'KRS Global Research' }}
+            </h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -96,7 +97,7 @@
     @include('home.booking')
     @include('home.testimonial')
     @include('home.footer')
-    
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -105,14 +106,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('home/lib/wow/wow.min.js')}}"></script>
-    <script src="{{ asset('home/lib/easing/easing.min.js')}}"></script>
-    <script src="{{ asset('home/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{ asset('home/lib/counterup/counterup.min.js')}}"></script>
-    <script src="{{ asset('home/lib/owlcarousel/owl.carousel.min.js')}}"></script>
-    <script src="{{ asset('home/lib/tempusdominus/js/moment.min.js')}}"></script>
-    <script src="{{ asset('home/lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
-    <script src="{{ asset('home/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+    <script src="{{ asset('home/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('home/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('home/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('home/lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ asset('home/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('home/lib/tempusdominus/js/moment.min.js') }}"></script>
+    <script src="{{ asset('home/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+    <script src="{{ asset('home/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 
 
     <!-- Template Javascript -->
