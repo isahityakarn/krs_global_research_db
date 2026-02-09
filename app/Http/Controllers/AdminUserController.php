@@ -130,7 +130,9 @@ class AdminUserController extends Controller
 
     public function storePassword(Request $request)
     {
-
+        $validatedData = $request->validate([
+            'password' => 'required|string|min:8',
+        ]);
         $user = User::find(Auth::user()->id);
         $user->password = Hash::make($request->password);
         $user->save();
